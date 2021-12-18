@@ -21,6 +21,11 @@ class MyTestCase(unittest.TestCase):
         t.symptoms = {"type": "soma", "headache": False, "cough": False, "loose_smell": False}
         self.assertEqual(t.diagnose(), diseases.default)
 
+    def test_false_psycho_disease(self):
+        t = diagnost.Therapist()
+        t.symptoms = {"type":"psycho", "hal": "False"}
+        self.assertEqual(t.diagnose(), diseases.default)
+
 
 if __name__ == '__main__':
     unittest.main()
