@@ -46,7 +46,13 @@ def main():
                 d = t.diagnose()
             else:
                 t.symptoms["hal"] = False
-                d = t.diagnose()
+                dep = input("do you have bad mood?")
+                if dep == "y":
+                    t.symptoms["bad_mood"] = True
+                    d = t.diagnose()
+                else:
+                    t.symptoms["bad_mood"] = False
+                    d = t.diagnose()
         else:
             t.symptoms["type"] = None
             d = t.diagnose()

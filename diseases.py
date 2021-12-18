@@ -23,6 +23,6 @@ cold = Disease("Простуда", "J06.9", {"type": "soma", "headache" : False,
 covid = Disease("COVID-19", "U07.2", {"type": "soma", "headache" : False, "cough" : True, "loose_smell":True})
 
 shiza = Disease("Шизофрения", "F20.9", {"type": "psycho", "hal": True})
-depression = Disease("Депрессия", "F32.9", {"type": "psycho", "hal": False})
+depression = Disease("Депрессия", "F32.9", {"type": "psycho", "hal": False, "bad_mood": True})
 
 default = Disease("Undefined disease", "Z00.0", {})

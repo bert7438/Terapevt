@@ -23,7 +23,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_false_psycho_disease(self):
         t = diagnost.Therapist()
-        t.symptoms = {"type":"psycho", "hal": "False"}
+        t.symptoms = {"type":"psycho", "hal": False, "bad_mood": False}
         self.assertEqual(t.diagnose(), diseases.default)
 
 

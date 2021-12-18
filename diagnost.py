@@ -19,7 +19,7 @@ class Therapist:
         elif self.symptoms.get("type") == "psycho":
             if self.symptoms.get("hal"):
                 return diseases.shiza
-            elif not self.symptoms.get("hal"):
+            elif not self.symptoms.get("hal") and self.symptoms.get("bad_mood"):
                 return diseases.depression
             else:
                 return diseases.default
